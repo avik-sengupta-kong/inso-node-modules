@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:tns="http://example.com/schema"
+  targetNamespace="http://example.com/schema">
+
+  <wsdl:types>
+    <xsd:schema>
+       {IMPORTS}
+    </xsd:schema>
+  </wsdl:types>
+
+
+  <wsdl:portType name="endpoint">
+    <wsdl:operation name="operation">
+    </wsdl:operation>
+  </wsdl:portType>
+
+  <wsdl:binding name="binding" type="endpoint">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="operation">
+    </wsdl:operation>
+  </wsdl:binding>
+
+  <wsdl:service name="{SERVICE}" >
+    <wsdl:port name="port" binding="binding">
+      <soap:address location="http://localhost:8888/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

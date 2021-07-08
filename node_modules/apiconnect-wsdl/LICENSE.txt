@@ -1,0 +1,3 @@
+LICENSE Information
+
+Use of the apiconnect-wsdl module first requires installation and license acceptance of the IBM API Connect Toolkit which can be obtained from https://npmjs.org/packages/apiconnect. For more information on IBM API Connect offerings and support, see https://www.ibm.com/support/knowledgecenter/SSMNED_5.0.0/com.ibm.apic.overview.doc/overview_rapic_offerings.html.
